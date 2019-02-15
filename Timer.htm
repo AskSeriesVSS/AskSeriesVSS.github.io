@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AskSeries Digital Clock</title>
+    </head>
+    <style>
+    body{
+        background-color:black;
+        border-style:solid;
+        border-width:10px;
+            border-color:;
+            text-align:center;
+            color:blue;
+    }
+        p{
+        border-style:dotted;
+        border-width:5px;
+            border-color:#558B2F;
+            padding:30px 10px;
+            color:#99FFFF;
+            font-size:45px;
+            background-color:;
+            }
+         #ded{
+             color:red;
+             text-align:align;
+             font-size:20px;
+         }
+div{
+color:white;
+}
+     </style>
+    <body>
+<marque><div id="ded">Please wait for a minute,checking your timezone,this process is automatic you will be redirected when the process will be over.</div></marquee>
+    <i><b>
+    <h1>AskSeries</h1>
+    <p id="b"></p>
+    <div id="d"></div>
+            <script>
+            function a() {
+    
+   var d = new Date();
+   var date = d.getDate()+0;
+   var month = d.getMonth()+1 ;
+   var year = d.getFullYear();
+   if(date < 10){
+        date="0" + date
+    }
+    if(month < 10){
+        month="0" + month
+    }
+    if(month == 1){
+        month="Jan"
+    }
+    if(month == 2){
+        month="Feb"
+    }
+    if(month == 3){
+        month="Mar"
+    }
+    if(month == 4){
+        month="Apr"
+    }
+   var a = document.getElementById('a');
+   a.innerHTML = 'Date:'+date+'/'+month+'/'+year;
+}
+setInterval(a);
+function b() {
+   var d = new Date();
+   var hours = d.getHours() ;
+   var mins = d.getMinutes();
+   var secs = d.getSeconds();
+   var s = " AM"
+    if(hours > 12){
+        s = " PM"
+    }
+    if(secs < 10){
+        secs="0" + secs
+    }
+    if(mins < 10){
+        mins="0" + mins
+    }
+    if(hours  < 10){
+        hours="0"  + hours
+    }
+    if(hours==10 && secs==2 || hours==11 && secs==2 || hours==12 && secs==2 || hours==13 && secs==2 || hours==14 && secs==2 || hours==15 && secs==2 || hours==16 && secs==2 || hours==17 && secs==2 || hours==18 && secs==2 || hours==18 && secs==2 || hours==19 && secs==2 || hours==20 && secs==2 || hours==21 && secs==2 || hours==22 && secs==2){
+        window.location.href = "https://askseriesvss.github.io/";
+    }
+   var b =
+  
+   document.getElementById('b');
+   b.innerHTML ='Time: '+hours+":"+mins+":"+secs+s;
+}
+setInterval(b);
+function c(){
+var d= new Date()
+var f = d.getDay()+1;
+if(f==1){
+    f="Sunday";
+}
+if(f==2){
+    f="Monday";
+}
+if(f==3){
+    f="Tuesday";
+}
+if(f==4){
+    f="Wednesday";
+}
+if(f==5){
+    f="Thursday";
+}
+if(f==6){
+    f="Friday";
+}
+if(f==7){
+    f="Saturday";
+}
+var c=
+document.getElementById('c');
+   c.innerHTML ='Day :'+f;
+   }
+   setInterval(c)
+
+function d() {
+    
+   var d = new Date();
+   var date = d.getDate()+0;
+   var month = d.getMonth()+1;
+   var se="None"
+   if(date==1 && month==1){
+       se="Happy New Year"
+   }
+   if(date==1 && month==2){
+       se="Sourjya's Birthday"
+   }
+   var d=
+   document.getElementById('d');
+   d.innerHTML ='Today is: '+se;
+   }
+   setInterval(d)
+        </script>
+    </body>
+</html>
