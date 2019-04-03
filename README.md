@@ -1,7 +1,2 @@
-<style>
-  h6{
-  background-color:lime;
-  }
-</style>
-<h6>gdf</h6>
+<font colors="lime"><h6>gdf</h6>
   
