@@ -1,2 +1,2 @@
-#AskSeries
+<marquee>AskSeries</marquee>
   
