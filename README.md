@@ -5,4 +5,4 @@
 <p> It is open at specific timing from 10am till 11pm.<p>
  <br>
  <br>
- <i>We hope that you will like it::From <i>Team AskSeriesVSS</i> 
+ <i>We hope that you will like it::From <b>Team AskSeriesVSS</b> 
